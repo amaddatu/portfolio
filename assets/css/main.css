@@ -3,7 +3,8 @@ section{
 }
 aside{
   border: 1px black solid;
-  width: 33%;
+  /* width: 33%; */
+  flex: 0 0 33%;
   border-right: green 3px solid;
   min-height: 200px;
   text-align: right;
