@@ -1,11 +1,260 @@
-section{
-  display: flex;
+* {
+  color: #BBB;
+  font-family: 'Arial';
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
 }
-aside{
-  border: 1px black solid;
-  /* width: 33%; */
-  flex: 0 0 33%;
-  border-right: green 3px solid;
-  min-height: 200px;
-  text-align: right;
+
+body{
+  background: black;
 }
+
+h1, section{
+  margin: 10px 15px;
+}
+
+#hero-section{
+  width: 100%;
+  height: 100px;
+  position: relative;
+}
+
+.hero{
+  transition: all 2s linear;
+  /* transition properties */
+  background: white;
+  color: #FFF;
+  /* center an absolute div based on the browser width */
+  left: calc((99vw - 30px) / 2 - 105px);
+  max-height: 36px;
+  max-width: 210px;
+  top: 10px;
+  transform: rotate(0deg);
+  padding: 5px 0px;
+  padding-left: 4px;
+  /* transition properties */
+
+  display: block;
+  display: none;
+  position: absolute;
+  text-align: left;
+  font-size: 24px;
+  width: 210px;
+  white-space: nowrap;
+
+  overflow: hidden;
+
+  margin: 0px;
+}
+.hero > span{
+  display: inline-block;
+}
+
+#hero-section:hover > .hero{
+  background: black;
+  color: #BBB;
+
+  
+  /* center an absolute div based on the browser width */
+  left: calc((99vw - 30px) / 2 - 105px);
+  max-height: 36px;
+  max-width: 21px;
+  top: 10px;
+  transform: rotate(0deg);
+  padding: 5px 0px;
+  padding-left: 4px;
+}
+
+#hero-1{
+  display: block;
+  max-width: 21px;
+  max-height: 3px;
+  padding: 0px;
+  top: 47px;
+  
+  transform: rotate(0deg);
+}
+
+#hero-2{
+  display: block;
+  max-width: 42px;
+  max-height: 3px;
+  padding: 0px;
+  top: 29px;
+  left: calc((99vw - 30px) / 2 - 105px + 8px);
+  transform: rotate(-70deg);
+  
+}
+
+#hero-section:hover > #hero-2{
+  left: calc((99vw - 30px) / 2 + (21px * 1) - 105px);
+}
+
+#hero-section > #hero-2 > span{
+  margin-left: calc(21px * -1);
+}
+
+
+#hero-3{
+  display: block;
+  max-width: 42px;
+  max-height: 3px;
+  padding: 0px;
+  top: 29px;
+  left: calc((99vw - 30px) / 2 - 105px + 23px);
+  transform: rotate(70deg);
+  
+}
+
+#hero-section:hover > #hero-3{
+  left: calc((99vw - 30px) / 2 + (21px * 2) - 105px);
+}
+
+#hero-section > #hero-3 > span{
+  margin-left: calc(21px * -2);
+}
+
+
+
+#hero-4{
+  display: block;
+  max-width: 47px;
+  max-height: 3px;
+  padding: 0px;
+  top: 38px;
+  left: calc((99vw - 30px) / 2 - 105px + 23px);
+  transform: rotate(0deg);
+  
+}
+
+#hero-section:hover > #hero-4{
+  left: calc((99vw - 30px) / 2 + (21px * 3) - 105px);
+}
+
+#hero-section > #hero-4 > span{
+  margin-left: calc(21px * -3);
+}
+
+#hero-5{
+  display: block;
+  max-width: 21px;
+  max-height: 3px;
+  padding: 0px;
+  top: 47px;
+  left: calc((99vw - 30px) / 2 - 105px + 50px);
+  transform: rotate(0deg);
+  
+}
+
+#hero-section:hover > #hero-5{
+  left: calc((99vw - 30px) / 2 + (21px * 4) - 105px);
+}
+
+#hero-section > #hero-5 > span{
+  margin-left: calc(21px * -4);
+}
+
+#hero-6{
+  display: block;
+  max-width: 32px;
+  max-height: 3px;
+  padding: 0px;
+  top: 25px;
+  left: calc((99vw - 30px) / 2 - 105px + 55px);
+  transform: rotate(-85deg);
+  
+}
+
+#hero-section:hover > #hero-6{
+  left: calc((99vw - 30px) / 2 + (21px * 5) - 105px);
+}
+
+#hero-section > #hero-6 > span{
+  margin-left: calc(21px * -5);
+}
+
+#hero-7{
+  display: block;
+  max-width: 34px;
+  max-height: 3px;
+  padding: 0px;
+  top: 25px;
+  left: calc((99vw - 30px) / 2 - 105px + 65px);
+  transform: rotate(60deg);
+  
+}
+
+#hero-section:hover > #hero-7{
+  left: calc((99vw - 30px) / 2 + (21px * 6) - 105px);
+}
+
+#hero-section > #hero-7 > span{
+  margin-left: calc(21px * -6);
+}
+
+#hero-8{
+  display: block;
+  max-width: 34px;
+  max-height: 3px;
+  padding: 0px;
+  top: 25px;
+  left: calc((99vw - 30px) / 2 - 105px + 80px);
+  transform: rotate(-60deg);
+  
+}
+
+#hero-section:hover > #hero-8{
+  left: calc((99vw - 30px) / 2 + (21px * 7) - 105px);
+}
+
+#hero-section > #hero-8 > span{
+  margin-left: calc(21px * -7);
+}
+
+#hero-9{
+  display: block;
+  max-width: 32px;
+  max-height: 3px;
+  padding: 0px;
+  top: 25px;
+  left: calc((99vw - 30px) / 2 - 105px + 92px);
+  transform: rotate(85deg);
+}
+
+#hero-section:hover > #hero-9{
+  left: calc((99vw - 30px) / 2 + (21px * 8) - 105px);
+}
+
+#hero-section > #hero-9 > span{
+  margin-left: calc(21px * -8);
+}
+
+#hero-10{
+  display: block;
+  max-width: 50px;
+  max-height: 3px;
+  padding: 0px;
+  top: 42px;
+  left: calc((99vw - 30px) / 2 - 105px + 108px);
+  transform: rotate(0deg);
+}
+
+#hero-section:hover > #hero-10{
+  left: calc((99vw - 30px) / 2 + (21px * 9) - 105px);
+}
+
+#hero-section > #hero-10 > span{
+  margin-left: calc(21px * -9);
+}
+
+#hero-section:hover > [id^=hero].hero{
+  max-width: 21px;
+  max-height: 36px;
+  transform: rotate(0deg);
+}
+
+/* #hero-10{
+  display: block;
+  opacity: 0.5;
+} */
